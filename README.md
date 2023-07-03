@@ -162,10 +162,6 @@ soon
 - GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
 - LinkedIn: [@Mofuhidy](https://www.linkedin.com/in/mohammed-alfuhidy-b0081319a/)
 
-- 👤 **Paulinelali**
-- GitHub: [@Paulinelali](https://github.com/Mofuhidy)
-- LinkedIn: [@Paulinelali](https://www.linkedin.com/in/ayomide-emmanuel-1353b31b9/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
