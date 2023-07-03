@@ -89,7 +89,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/Mofuhidy/group-capstone-js.git
+- git clone https://github.com/Mofuhidy/math-magicians.git
 
 ### Install
 
@@ -179,7 +179,7 @@ soon
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Mofuhidy/group-capstone-js/issues).
+Feel free to check the [issues page](https://github.com/Mofuhidy/math-magicians/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
