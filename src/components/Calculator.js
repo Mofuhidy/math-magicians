@@ -19,7 +19,7 @@ export default function Calculator() {
   const { total, next, operation } = calculator;
 
   return (
-    <div className=" w-1/2 h-fi bg-amber-100 rounded-lg shadow-sm">
+    <div className=" w-1/2 h-fi bg-amber-100 rounded-lg shadow-md">
       <div className="display text-right text-gray-700">
 
         <h1 className="number text-3xl pr-5 pt-5 pb-5 ">
