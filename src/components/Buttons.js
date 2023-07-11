@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 function Buttons({ symbol, btnColor, handleOnClick }) {
   const regularClass = `py-4  ${btnColor}`;
   const uniqueClass = `py-4 col-span-2 ${btnColor}`;
+
   return (
 
     symbol === 0
