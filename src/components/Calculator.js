@@ -19,19 +19,28 @@ export default function Calculator() {
   const { total, next, operation } = calculator;
 
   return (
-    <div className=" w-1/2 h-fi bg-amber-100 rounded-lg shadow-md col-span-1 ">
-      <div className="display text-right text-gray-700">
+    <div className="flex p-16 items-center">
+      <h1 className="w-1/2 text-7xl font-extrabold">
+        Let
+        <span className="text-[#ffb579]">&rsquo;</span>
+        s do some math
+        <span className="text-[#ffb579]">!</span>
+      </h1>
 
-        <h1 className="number text-3xl pr-5 pt-5 pb-5 ">
-          {total || next || operation || 0}
-        </h1>
+      <div className="w-1/2 flex justify-end">
+        <div className=" h-fi bg-amber-100 rounded-lg shadow-md w-2/3">
+          <div className="display text-right text-gray-700">
+            <h1 className="number text-3xl pr-5 pt-5 pb-5 ">
+              {total || next || operation || 0}
+            </h1>
+          </div>
+          <div className="grid grid-cols-4 divide-x divide-y">
+            {calcSymbols.map((el) => (el === 'x' || el === '÷' || el === '+' || el === '-' || el === '.' || el === '='
+              ? <Buttons symbol={el} key={el} btnColor="bg-[#F8CBA6] text-white hover:text-gray-700 hover:bg-amber-50 " handleOnClick={handleOnClick} />
+              : <Buttons symbol={el} key={el} btnColor="bg-amber-50 text-gray-700  hover:text-white hover:bg-[#F8CBA6]" handleOnClick={handleOnClick} />))}
+          </div>
+        </div>
       </div>
-      <div className="grid grid-cols-4 divide-x divide-y">
-        {calcSymbols.map((el) => (el === 'x' || el === '÷' || el === '+' || el === '-' || el === '.' || el === '='
-          ? <Buttons symbol={el} key={el} btnColor="bg-[#F8CBA6] text-white hover:text-gray-700 hover:bg-amber-50 " handleOnClick={handleOnClick} />
-          : <Buttons symbol={el} key={el} btnColor="bg-amber-50 text-gray-700  hover:text-white hover:bg-[#F8CBA6]" handleOnClick={handleOnClick} />))}
-      </div>
-
     </div>
   );
 }
