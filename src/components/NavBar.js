@@ -34,31 +34,40 @@ function NavBar() {
           {
               !isMenuOpen
                 ? (<FiMenu className="h-8 w-8 " />)
-                : (<MdClose className="text-[#ffb579] h-8 w-8  z-10 " />)
+                : (<MdClose className="text-[#ffb579] h-8 w-8 " />)
             }
         </button>
       </div>
 
       <ul className={`flex ${
-        isMenuOpen ? 'block' : 'hidden'
-      } sm:flex sm:justify-around sm:items-center ${
-        isMenuOpen ? 'h-screen flex flex-col items-center z-50 justify-center gap-8 pb-80 absolute top-16 left-0 right-0 bg-amber-50 bg-opacity-60 backdrop-blur-sm ' : ''
-      }`}
+        isMenuOpen ? 'h-screen flex flex-col items-center z-50 justify-center gap-8 pb-80 absolute top-16 left-0 right-0 bg-amber-50 bg-opacity-60 backdrop-blur-sm ' : 'hidden'
+      } sm:flex sm:justify-around sm:items-center`}
       >
         {
-        links.map((link) => (
-          <li key={link.name} className=" mx-2">
-            <NavLink
-              className="text-dark font-semibold aria-[current=page]:text-[#ffb579]
-               hover:underline underline-offset-8 hover:text-[#ffb579]"
-              to={link.path}
-              onClick={handleMenu}
-            >
-              {link.name}
 
-            </NavLink>
-          </li>
-        ))
+          isMenuOpen ? links.map((link) => (
+            <li key={link.name} className=" mx-2">
+              <NavLink
+                className="text-dark font-semibold aria-[current=page]:text-[#ffb579]
+               hover:underline underline-offset-8 hover:text-[#ffb579]"
+                to={link.path}
+                onClick={handleMenu}
+              >
+                {link.name}
+              </NavLink>
+            </li>
+          )) : links.map((link) => (
+            <li key={link.name} className=" mx-2">
+              <NavLink
+                className="text-dark font-semibold aria-[current=page]:text-[#ffb579]
+               hover:underline underline-offset-8 hover:text-[#ffb579]"
+                to={link.path}
+              >
+                {link.name}
+
+              </NavLink>
+            </li>
+          ))
        }
       </ul>
     </nav>
