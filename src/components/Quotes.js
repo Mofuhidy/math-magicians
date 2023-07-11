@@ -38,8 +38,8 @@ function Quotes() {
         </h1>
         <div className="card bg-amber-50 w-4/5 h-fit shadow-md p-5 rounded-lg flex justify-center">
 
-          { (isLoading === 'pending' || isLoading === 'idle' ? <p className=" text-2xl my-2">Loading ...</p> : (
-            <p className=" text-2xl my-2">
+          { (isLoading === 'pending' || isLoading === 'idle' ? <p className=" text-lg  sm:text-2xl my-2">Loading ...</p> : (
+            <p className="text-lg sm:text-2xl my-2">
               {quote && quote.quote}
               {' '}
               - by

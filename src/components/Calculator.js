@@ -19,15 +19,15 @@ export default function Calculator() {
   const { total, next, operation } = calculator;
 
   return (
-    <div className="flex p-16 items-center">
-      <h1 className="w-1/2 text-7xl font-extrabold">
+    <div className="flex p-10 sm:pb-16 items-center flex-col sm:flex-row justify-center">
+      <h1 className="sm:w-1/2 w-4/5 sm:text-7xl font-extrabold text-5xl">
         Let
         <span className="text-[#ffb579]">&rsquo;</span>
         s do some math
         <span className="text-[#ffb579]">!</span>
       </h1>
 
-      <div className="w-1/2 flex justify-end">
+      <div className="sm:w-1/2 flex sm:justify-end justify-center w-full mt-10">
         <div className=" h-fi bg-amber-100 rounded-lg shadow-md w-2/3">
           <div className="display text-right text-gray-700">
             <h1 className="number text-3xl pr-5 pt-5 pb-5 ">

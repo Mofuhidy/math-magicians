@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div className=" p-12 flex justify-center align-center">
-      <div className="card bg-amber-50 w-4/5 h-fit shadow-md p-5 rounded-lg">
-        <div className="flex items-baseline">
+      <div className="card bg-amber-50 w-4/5 h-fit shadow-md p-5 rounded-lg mb-10">
+        <div className="flex items-baseline sm:flex-row flex-col mb-4">
           <h1 className=" text-3xl font-extrabold">
             Welcome to
           </h1>
@@ -14,7 +14,7 @@ function Home() {
           combining practical calculations and thought-provoking quotes.
           Indulge your curiosity and appreciation for this fascinating subject.
           <br />
-          <span className=" text-2xl font-extrabold text-[#ffb579] mr-2 mt-2  drop-shadow-sm">
+          <span className=" text-lg sm:text-2xl font-extrabold text-[#ffb579] mr-2 mt-2  drop-shadow-sm">
             Perform Calculations:
             <br />
           </span>
@@ -22,7 +22,7 @@ function Home() {
           from basic arithmetic to complex equations, using our intuitive interface.
           Instantly generate accurate results and effortlessly dive into the world of mathematics.
           <br />
-          <span className=" text-2xl font-extrabold text-[#ffb579] mr-2  mt-2 drop-shadow-sm">
+          <span className=" text-lg  sm:text-2xl font-extrabold text-[#ffb579] mr-2  mt-2 drop-shadow-sm">
             {' '}
             Discover Math Quotes:
             {' '}
